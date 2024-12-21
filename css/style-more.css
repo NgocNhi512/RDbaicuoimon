@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg-dark-50{ background-color: rgba(0,0,0,0.5)}
+.img-100
+{ 
+width: 80px; height: auto
+}
+/*.w-100
+{
+width: 100%; height: auto
+}*/
+.h-100
+{
+width: auto; height: 100%
+}
+.text-dark
+{
+	color:rgba(0,0,0,1.00)
+}
+.container
+	{
+		 width: 100%; margin: auto;
+		 position: relative;
+	}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.product {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.product:hover {
+	transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Thiết lập mỗi ô sản phẩm */
+.product {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Thêm hiệu ứng khi hover vào mỗi ô */
+.product:hover {
+	transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tạo hiệu ứng bóng đổ khi hover */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Phóng to khi hover */
+}
+
+/* Dòng text */
+.text {
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    transform: translateX(-50%);
+    color: #92614C;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: color 0.3s ease; /* Thêm hiệu ứng chuyển màu */
+}
+
+/* Khi hover vào mỗi cột, đổi màu text */
+.grid-item:hover .text {
+    color: #fff; /* Màu khi hover (tomato) */
+}
+.btn-outline-secondary { 
+  color: rgba(0,0,0,1.00);
+  border-color: rgba(0,0,0,1.00);
+ 
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: #92614C;
+  
+}
+
+/*.container
+{
+	text-align: center;
+	position: relative;*/ /* Quan trọng: Đặt container là gốc tọa độ */
+ /* display: inline-block;*/ /* Hoặc block tùy vào bố cục */
+	/*width: 90%; margin: auto*/
+/*}*/
+ 
+.container img {
+  display: block; /* Loại bỏ khoảng trắng thừa dưới ảnh */
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước container */
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute; /* Định vị tuyệt đối so với container */
+  top: 500px; /* Khoảng cách từ đỉnh container */
+  left: 20px; /* Khoảng cách từ bên trái container */
+  /* Hoặc bottom, right để định vị từ dưới và phải */
+ /* background-color: rgba(0, 0, 0, 0.5)*/; /* Màu nền bán trong suốt cho chữ dễ đọc */
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
+}
+nav .btn-toggle
+{
+	position: absolute; 
+	right: 0;
+	font-size: 18px;
+	cursor: pointer;
+	border: 1px solid #FFFFFF; 
+	background: none;
+	color: #FFFFFF
+}   
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+	align-content: center;
+}
+
+
+ .tag {
+  position: absolute;
+  top: 25px; /* Khoảng cách từ đỉnh ảnh */
+  left: 25px; /* Khoảng cách từ bên trái ảnh */
+  background-color: #92614C;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
